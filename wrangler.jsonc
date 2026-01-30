@@ -1,0 +1,37 @@
+{
+  "name": "community-board",
+  "main": "worker/src/index.ts",
+  "compatibility_date": "2025-06-20",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "RP_NAME": "Community Board",
+    "RP_SUBTITLE": "An opensource-friendly forum",
+    "REGISTER_ENABLED": true,
+    "S3_PUBLIC_URL": "https://your-s3-endpoint.com/bucket-name"
+  },
+  "assets": {
+    "directory": "./ui/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*", "/s3/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "community-db",
+      "database_id": "3533d88d-593b-4137-ae4a-e19a28970dbd",
+      "migrations_dir": "worker/migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV_SESSIONS",
+      "id": "5238ba5971a947afa77850d7c75bfc24"
+    }
+  ],
+  "dev": {
+    "port": 8787
+  }
+}
