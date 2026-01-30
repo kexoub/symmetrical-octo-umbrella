@@ -79,7 +79,7 @@ yarn db:migrations:apply
 
 ### 线上部署
 
-[![Deploy with Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://deploy.workers.cloudflare.com/?url=https://github.com/kexoub/symmetrical-octo-umbrella)
+[![Deploy with Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/kexoub/symmetrical-octo-umbrella)
 
 
 ## 截图
